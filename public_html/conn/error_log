@@ -1,0 +1,118 @@
+[23-Jan-2025 22:13:13 Europe/Minsk] PHP Warning:  require(phpmailer/vendor/autoload.php): Failed to open stream: No such file or directory in /hosting2/laocarby/public_html/conn/custom_mail2.php on line 6
+[23-Jan-2025 22:13:13 Europe/Minsk] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /hosting2/laocarby/public_html/conn/custom_mail2.php:6
+Stack trace:
+#0 {main}
+  thrown in /hosting2/laocarby/public_html/conn/custom_mail2.php on line 6
+[23-Jan-2025 22:18:00 Europe/Minsk] PHP Warning:  require(phpmailer/vendor/autoload.php): Failed to open stream: No such file or directory in /hosting2/laocarby/public_html/conn/custom_mail2.php on line 6
+[23-Jan-2025 22:18:00 Europe/Minsk] PHP Fatal error:  Uncaught Error: Failed opening required 'phpmailer/vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /hosting2/laocarby/public_html/conn/custom_mail2.php:6
+Stack trace:
+#0 {main}
+  thrown in /hosting2/laocarby/public_html/conn/custom_mail2.php on line 6
+[23-Jan-2025 22:35:49 Europe/Minsk] PHP Parse error:  syntax error, unexpected identifier "Сообщение" in /hosting2/laocarby/public_html/conn/custom_mail2.php on line 61
+[23-Jan-2025 22:36:02 Europe/Minsk] PHP Parse error:  syntax error, unexpected identifier "Сообщение" in /hosting2/laocarby/public_html/conn/custom_mail2.php on line 61
+[24-Jan-2025 00:00:02 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:00:02 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:02:46 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:02:46 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:02:48 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:02:48 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:02:48 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:02:48 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:02:48 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:02:48 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:02:49 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:02:49 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:03:58 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:03:58 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:04:48 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:04:48 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[24-Jan-2025 00:27:37 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[24-Jan-2025 00:27:37 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[30-Jan-2025 11:55:21 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[30-Jan-2025 11:55:21 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[01-Feb-2025 23:01:40 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[01-Feb-2025 23:01:40 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[02-Feb-2025 18:35:19 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[02-Feb-2025 18:35:19 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[02-Feb-2025 18:35:40 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[02-Feb-2025 18:35:40 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 14
+[02-Feb-2025 18:36:37 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[02-Feb-2025 18:36:37 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[02-Feb-2025 18:39:15 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[02-Feb-2025 18:39:15 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[02-Feb-2025 18:39:52 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[02-Feb-2025 18:39:52 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[02-Feb-2025 18:40:38 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[02-Feb-2025 18:40:38 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[06-Feb-2025 09:13:22 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[06-Feb-2025 09:13:22 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[11-Feb-2025 00:01:44 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[11-Feb-2025 00:01:44 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[12-Feb-2025 02:45:35 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[12-Feb-2025 02:45:35 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[20-Feb-2025 12:30:20 Europe/Minsk] PHP Warning:  Undefined array key "email" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 13
+[20-Feb-2025 12:30:20 Europe/Minsk] PHP Warning:  Undefined array key "message" in /hosting2/laocarby/public_html/conn/custom_mail4.php on line 15
+[24-Dec-2025 13:31:20 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:31:20 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:31:20 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[24-Dec-2025 13:33:36 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:33:36 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:33:36 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[24-Dec-2025 13:34:11 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:34:11 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:34:11 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[24-Dec-2025 13:34:14 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:34:14 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:34:14 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[24-Dec-2025 13:42:07 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:07 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:07 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[24-Dec-2025 13:42:09 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:09 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:09 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[24-Dec-2025 13:42:14 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:14 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:14 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[24-Dec-2025 13:42:18 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:18 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[24-Dec-2025 13:42:18 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[26-Dec-2025 09:16:02 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[26-Dec-2025 09:16:02 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[26-Dec-2025 09:16:02 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[26-Dec-2025 10:27:38 UTC] PHP Warning:  Undefined array key "mail" in /home/bgorho/public_html/conn/modalform.php on line 12
+[26-Dec-2025 10:27:38 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/bgorho/public_html/conn/modalform.php on line 12
+[26-Dec-2025 10:27:38 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37
+[26-Dec-2025 10:29:51 UTC] PHP Fatal error:  Uncaught Error: Object of class PHPMailer\PHPMailer\PHPMailer could not be converted to string in /home/bgorho/public_html/conn/modalform.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/bgorho/public_html/conn/modalform.php on line 37

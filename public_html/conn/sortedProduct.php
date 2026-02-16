@@ -1,0 +1,1 @@
+<?php news_sort("cat", 29); ?>

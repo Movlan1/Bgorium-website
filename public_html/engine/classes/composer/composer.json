@@ -1,0 +1,22 @@
+{
+    "require": {
+        "league/flysystem": "^3.0",
+        "league/flysystem-ftp": "^3.0",
+        "league/flysystem-sftp-v3": "^3.0",
+        "tinify/tinify": "^1.5",
+        "intervention/image": "^2.7",
+        "melbahja/seo": "^2.1",
+        "league/flysystem-memory": "^3.0",
+        "league/flysystem-async-aws-s3": "^3.0",
+        "async-aws/simple-s3": "^2.0",
+        "psr/log": "^1.0",
+        "symfony/http-client": "^5.4",
+        "league/flysystem-webdav": "^3.0",
+        "symfony/deprecation-contracts": "^2.1",
+        "symfony/service-contracts": "^2.5",
+        "robthree/twofactorauth": "~1.8"
+    },
+    "config": {
+        "platform-check": false
+    }
+}

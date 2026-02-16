@@ -1,0 +1,1279 @@
+.tox-tinymce-aux {
+	z-index: auto
+}
+
+.tox .tox-pop {
+	z-index: 1010
+}
+
+.tox-tinymce {
+	border:  1px solid #a7a6a6ab;
+	border-radius: 0;
+}
+.editor-panel .tox-tinymce {
+	border-top: none;
+}
+
+.tox .tox-menubar {
+	background-color: #f5f5f5
+}
+
+.dle_theme_dark .tox .tox-menubar {
+	background-color: #222f3e
+}
+
+.tox .tox-menubar+.tox-toolbar, .tox .tox-menubar+.tox-toolbar-overlord {
+	border: 0;
+	padding: 0;
+	margin: 0
+}
+
+.tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary {
+	background: #f5f5f5
+}
+.tox .tox-button::before {
+box-shadow: none;
+}
+
+.tox .tox-toolbar:first-child {
+	border-top: none;
+	box-shadow: none
+}
+
+.editor-panel .tox .tox-toolbar, .wseditor .tox .tox-toolbar {
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-x: overlay;
+	scrollbar-place: beside | over
+}
+
+.editor-panel .tox .tox-toolbar::-webkit-scrollbar-thumb, .wseditor .tox .tox-toolbar::-webkit-scrollbar-thumb {
+	background-color: darkgrey
+}
+
+.editor-panel .tox .tox-toolbar:active::-webkit-scrollbar, .wseditor .tox .tox-toolbar:active::-webkit-scrollbar, .editor-panel .tox .tox-toolbar:focus::-webkit-scrollbar, .wseditor .tox .tox-toolbar:focus::-webkit-scrollbar, .editor-panel .tox .tox-toolbar:hover::-webkit-scrollbar, .wseditor .tox .tox-toolbar:hover::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	visibility: visible
+}
+
+.editor-panel .tox .tox-toolbar::-webkit-scrollbar, .wseditor .tox .tox-toolbar::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	visibility: hidden
+}
+
+.editor-panel .tox .tox-toolbar, .wseditor .tox .tox-toolbar {
+	scrollbar-width: none
+}
+
+.editor-panel .tox .tox-toolbar:active, .wseditor .tox .tox-toolbar:active, .editor-panel .tox .tox-toolbar:focus, .wseditor .tox .tox-toolbar:focus, .editor-panel .tox .tox-toolbar:hover, .wseditor .tox .tox-toolbar:hover {
+	scrollbar-width: thin
+}
+
+.editor-panel .tox .tox-toolbar .tox-toolbar__group, .wseditor .tox .tox-toolbar .tox-toolbar__group {
+	flex-shrink: 0;
+	flex-wrap: nowrap
+}
+
+.tox .tox-toolbar__group, .tox .tox-menubar {
+	padding: 0 0.25rem 0 0.25rem
+}
+
+.tox .tox-tbtn, .tox .tox-split-button, .tox .tox-mbtn {
+	margin: 0.125rem 0 0.125rem 0
+}
+
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+	padding: 0;
+	border-bottom: 1px solid #a7a6a6ab;
+}
+
+.dle_theme_dark .tox:not(.tox-tinymce-inline) .tox-editor-header {
+	border-bottom: none;
+}
+
+.tox .tox-tbtn {
+	height: 1.875rem !important;
+	width: 1.875rem !important;
+	background: transparent;
+}
+
+.tox .tox-tbtn--disabled, .tox .tox-tbtn--disabled:hover, .tox .tox-tbtn:disabled, .tox .tox-tbtn:disabled:hover {
+	background: none;
+}
+.tox .tox-notification {
+	width: auto;
+}
+.tox .tox-tooltip__body {
+	font-size: .813rem;
+	font-weight: 400;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .12), 0 1px 6px 0 rgba(0, 0, 0, .12);
+	background-color: rgba(0, 0, 0, .7);
+}
+.tox .tox-split-button:focus::after {
+	box-shadow: 0 0 0 1px rgb(255 255 255 / 39%) inset;
+}
+
+.tox .tox-split-button:focus {
+    background: rgb(0 0 0 / 8%);
+}
+.tox .tox-tbtn:focus::after {
+	box-shadow: 0 0 0 1px rgb(255 255 255 / 39%) inset;
+}
+
+.tox .tox-edit-area::before {
+    border: none;
+    border-radius: 0px;
+ }
+
+.tox .tox-tbtn svg {
+	transform: scale(0.83) !important
+}
+
+.tox .tox-button {
+	font-size: 0.875rem;
+	line-height: 1.5rem
+}
+
+.tox .tox-tbtn__select-chevron {
+	width: 1.2rem
+}
+
+.tox .tox-collection__item-checkmark svg, .tox .tox-collection__item-icon svg {
+	transform: scale(0.8) !important
+}
+
+.tox .tox-listboxfield .tox-listbox--select, .tox .tox-textarea, .tox .tox-textfield, .tox .tox-toolbar-textfield {
+	padding: 0.313rem
+}
+
+.tox .tox-collection__item-checkmark, .tox .tox-collection__item-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	min-height: 24px;
+	min-width: 24px
+}
+
+.htmlfontsize-50 .tox .tox-tbtn svg, .htmlfontsize-50 .tox .tox-collection__item-checkmark svg, .htmlfontsize-50 .tox .tox-collection__item-icon svg, .htmlfontsize-50 .tox .tox-button--icon svg, .htmlfontsize-50 .tox .tox-checkbox__icons svg {
+	transform: scale(0.5) !important
+}
+
+.htmlfontsize-75 .tox .tox-tbtn svg, .htmlfontsize-75 .tox .tox-collection__item-checkmark svg, .htmlfontsize-75 .tox .tox-collection__item-icon svg, .htmlfontsize-75 .tox .tox-checkbox__icons svg, .htmlfontsize-75 .tox .tox-button--icon svg {
+	transform: scale(0.7) !important
+}
+.htmlfontsize-80 .tox .tox-tbtn svg, .htmlfontsize-80 .tox .tox-collection__item-checkmark svg,.htmlfontsize-80 .tox .tox-collection__item-icon svg,.htmlfontsize-80 .tox .tox-checkbox__icons svg,.htmlfontsize-80 .tox .tox-button--icon svg {
+	transform: scale(0.64) !important
+}
+
+.htmlfontsize-85 .tox .tox-tbtn svg,.htmlfontsize-85 .tox .tox-collection__item-checkmark svg,.htmlfontsize-85 .tox .tox-collection__item-icon svg,.htmlfontsize-85 .tox .tox-checkbox__icons svg,.htmlfontsize-85 .tox .tox-button--icon svg {
+	transform: scale(0.68) !important
+}
+
+.htmlfontsize-90 .tox .tox-tbtn svg, .htmlfontsize-90 .tox .tox-collection__item-checkmark svg, .htmlfontsize-90 .tox .tox-collection__item-icon svg, .htmlfontsize-90 .tox .tox-checkbox__icons svg, .htmlfontsize-90 .tox .tox-button--icon svg {
+	transform: scale(0.75) !important
+}
+
+.htmlfontsize-95 .tox .tox-tbtn svg, .htmlfontsize-95 .tox .tox-collection__item-checkmark svg, .htmlfontsize-95 .tox .tox-collection__item-icon svg, .htmlfontsize-95 .tox .tox-checkbox__icons svg, .htmlfontsize-90 .tox .tox-button--icon svg {
+	transform: scale(0.76) !important
+}
+.htmlfontsize-105 .tox .tox-tbtn svg,.htmlfontsize-105 .tox .tox-collection__item-checkmark svg,.htmlfontsize-105 .tox .tox-collection__item-icon svg,.htmlfontsize-105 .tox .tox-checkbox__icons svg,.htmlfontsize-105 .tox .tox-button--icon svg {
+	transform: scale(0.84) !important
+}
+.htmlfontsize-110 .tox .tox-tbtn svg, .htmlfontsize-110 .tox .tox-collection__item-checkmark svg, .htmlfontsize-110 .tox .tox-collection__item-icon svg, .htmlfontsize-110 .tox .tox-checkbox__icons svg, .htmlfontsize-110 .tox .tox-button--icon svg {
+	transform: scale(0.88) !important
+}
+.htmlfontsize-115 .tox .tox-tbtn svg,.htmlfontsize-115 .tox .tox-collection__item-checkmark svg,.htmlfontsize-115 .tox .tox-collection__item-icon svg,.htmlfontsize-115 .tox .tox-checkbox__icons svg,.htmlfontsize-115 .tox .tox-button--icon svg {
+	transform: scale(0.92) !important
+}
+.htmlfontsize-120 .tox .tox-tbtn svg, .htmlfontsize-120 .tox .tox-collection__item-checkmark svg, .htmlfontsize-120 .tox .tox-collection__item-icon svg, .htmlfontsize-120 .tox .tox-checkbox__icons svg, .htmlfontsize-120 .tox .tox-button--icon svg {
+	transform: scale(0.96) !important
+}
+.htmlfontsize-125 .tox .tox-tbtn svg,.htmlfontsize-125 .tox .tox-collection__item-checkmark svg,.htmlfontsize-125 .tox .tox-collection__item-icon svg,.htmlfontsize-125 .tox .tox-checkbox__icons svg,.htmlfontsize-125 .tox .tox-button--icon svg {
+	transform: scale(1) !important
+}
+.htmlfontsize-130 .tox .tox-tbtn svg, .htmlfontsize-130 .tox .tox-collection__item-checkmark svg, .htmlfontsize-130 .tox .tox-collection__item-icon svg, .htmlfontsize-130 .tox .tox-checkbox__icons svg, .htmlfontsize-130 .tox .tox-button--icon svg {
+	transform: scale(1) !important
+}
+.htmlfontsize-135 .tox .tox-tbtn svg,.htmlfontsize-135 .tox .tox-collection__item-checkmark svg,.htmlfontsize-135 .tox .tox-collection__item-icon svg,.htmlfontsize-135 .tox .tox-checkbox__icons svg,.htmlfontsize-135 .tox .tox-button--icon svg {
+	transform: scale(1.08) !important
+}
+.htmlfontsize-140 .tox .tox-tbtn svg, .htmlfontsize-140 .tox .tox-collection__item-checkmark svg, .htmlfontsize-140 .tox .tox-collection__item-icon svg, .htmlfontsize-140 .tox .tox-checkbox__icons svg, .htmlfontsize-140 .tox .tox-button--icon svg {
+	transform: scale(1.12) !important
+}
+.htmlfontsize-145 .tox .tox-tbtn svg,.htmlfontsize-145 .tox .tox-collection__item-checkmark svg,.htmlfontsize-145 .tox .tox-collection__item-icon svg,.htmlfontsize-145 .tox .tox-checkbox__icons svg,.htmlfontsize-145 .tox .tox-button--icon svg {
+	transform: scale(1.16) !important
+}
+.htmlfontsize-150 .tox .tox-tbtn svg, .htmlfontsize-150 .tox .tox-collection__item-checkmark svg, .htmlfontsize-150 .tox .tox-collection__item-icon svg, .htmlfontsize-150 .tox .tox-checkbox__icons svg, .htmlfontsize-150 .tox .tox-button--icon svg {
+	transform: scale(1.2) !important
+}
+
+.htmlfontsize-175 .tox .tox-tbtn svg, .htmlfontsize-175 .tox .tox-collection__item-checkmark svg, .htmlfontsize-175 .tox .tox-collection__item-icon svg, .htmlfontsize-175 .tox .tox-checkbox__icons svg, .htmlfontsize-175 .tox .tox-button--icon svg {
+	transform: scale(1.4) !important
+}
+
+.htmlfontsize-200 .tox .tox-tbtn svg, .htmlfontsize-200 .tox .tox-collection__item-checkmark svg, .htmlfontsize-200 .tox .tox-collection__item-icon svg, .htmlfontsize-200 .tox .tox-checkbox__icons svg, .htmlfontsize-200 .tox .tox-button--icon svg {
+	transform: scale(1.8) !important
+}
+
+.tox .tox-split-button__chevron {
+	width: 0.875rem !important
+}
+
+.tox .tox-collection--list .tox-collection__item {
+	padding: 0.25rem 0.5rem
+}
+
+.tox:not([dir=rtl]) .tox-form__controls-h-stack>:not(:first-child) {
+	margin-left: 0.25rem
+}
+
+.tox .tox-tbtn--select {
+	width: auto !important;
+	max-width: 6.875rem
+}
+
+.tox .tox-mbtn {
+	font-size: .82rem;
+	height: 1.75rem
+}
+
+.tox-dialog .tox-notification p {
+	font-size: .85rem
+}
+
+.tox .tox-collection__item-label {
+	font-size: .85rem;
+	line-height: 1.5rem
+}
+.tox .tox-statusbar__text-container {
+	height: auto;
+}
+.dle_theme_dark .tox .tox-toolbar, .dle_theme_dark .tox .tox-toolbar__overflow, .dle_theme_dark .tox .tox-toolbar__primary {
+	background-color: #495264;
+	border-top: 1px solid rgba(255, 255, 255, .15) !important;
+	border-bottom: 1px solid #000 !important;
+	box-shadow: inherit
+}
+
+.dle_theme_dark  .tox .tox-toolbar-overlord {
+	background-color: #495264
+}
+
+.dle_theme_dark .tox .tox-toolbar:first-child {
+	border-top: none !important
+}
+
+.dle_theme_dark .tox .tox-toolbar:last-child, .dle_theme_dark .tox .tox-toolbar__primary:last-child {
+	border-bottom: none !important
+}
+
+.tox .tox-pop__dialog {
+	background-color: #f5f5f5;
+	border: none
+}
+
+.tox .tox-tbtn--bespoke {
+	background: inherit
+}
+
+.dle_theme_dark .tox .tox-pop__dialog {
+	background-color: #495264;
+	border: 1px solid #495264;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 15%)
+}
+
+.tox .tox-pop.tox-pop--top::after {
+	border-color: transparent transparent #f5f5f5 transparent
+}
+
+.tox .tox-pop.tox-pop--bottom::after {
+	border-color: #f5f5f5 transparent transparent transparent
+}
+
+.editor-style-light .tox .tox-pop.tox-pop--top::after {
+	border-color: transparent transparent #fff transparent
+}
+
+.editor-style-light .tox .tox-pop.tox-pop--bottom::after {
+	border-color: #fff transparent transparent transparent
+}
+
+.dle_theme_dark .tox .tox-pop.tox-pop--top::after, .dle_theme_dark.editor-style-light .tox .tox-pop.tox-pop--top::after {
+	border-color: transparent transparent #495264 transparent
+}
+
+.dle_theme_dark .tox .tox-dropzone {
+	background: inherit
+}
+
+.tox .tox-pop.tox-pop--top::before {
+	border-color: transparent transparent #ddd transparent;
+	border-width: 8px;
+	margin-left: -8px
+}
+
+.tox .tox-color-input span {
+	height: 1.313rem
+}
+
+.tox .tox-checkbox {
+	height: 2rem;
+	min-width: 1rem
+}
+
+.tox .tox-color-input span::before {
+	height: 21px
+}
+
+.dle_theme_dark .tox .tox-pop.tox-pop--top::before {
+	border-color: transparent transparent #000 transparent
+}
+
+.tox.tox-tinymce-aux .tox-toolbar__overflow {
+	border: 0;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	z-index: 1010
+}
+.dle_theme_dark .tox.tox-tinymce-aux .tox-toolbar__overflow {
+	border-right: none;
+	border-left: none;
+}
+
+.tox .tox-dialog {
+	border-width: 0px;
+	max-width: 35rem;
+	box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+}
+
+.tox .tox-dialog--width-md {
+	max-width: 50rem;
+}
+
+.tox .tox-dialog--width-lg {
+	max-width: 63rem;
+	height: 550px;
+}
+
+.tox .tox-dialog__header {
+	color: #fff;
+	background-color: #2980b9;
+	border-bottom: 1px solid #2980b9;
+	padding: 0.325rem 1rem 0.325rem 1rem
+}
+
+.dle_theme_a .tox .tox-dialog__header {
+	background-color: #5C6BC0;
+	border-bottom: 1px solid #5C6BC0
+}
+
+.dle_theme_b .tox .tox-dialog__header {
+	background-color: #5F4B8B;
+	border-bottom: 1px solid #5F4B8B
+}
+
+.dle_theme_c .tox .tox-dialog__header {
+	background-color: #5D4037;
+	border-bottom: 1px solid #5D4037
+}
+
+.dle_theme_d .tox .tox-dialog__header {
+	background-color: #0097A7;
+	border-bottom: 1px solid #0097A7
+}
+
+.dle_theme_e .tox .tox-dialog__header {
+	background-color: #63777F;
+	border-bottom: 1px solid #63777F
+}
+
+.dle_theme_f .tox .tox-dialog__header {
+	background-color: #3D4A4F;
+	border-bottom: 1px solid #3D4A4F
+}
+
+.dle_theme_g .tox .tox-dialog__header {
+	background-color: #660A3E;
+	border-bottom: 1px solid #660A3E
+}
+
+.dle_theme_h .tox .tox-dialog__header {
+	background-color: #424242;
+	border-bottom: 1px solid #424242
+}
+
+.dle_theme_i .tox .tox-dialog__header {
+	background-color: #344960;
+	border-bottom: 1px solid #344960
+}
+
+.dle_theme_dark .tox .tox-dialog__header {
+	background-color: rgba(0, 0, 0, .2);
+	border-bottom: 1px solid rgba(0, 0, 0, .2)
+}
+
+.tox .tox-dialog__header .tox-button--icon .tox-icon svg {
+	fill: #fff;
+	opacity: 0.6
+}
+
+.tox .tox-dialog__body-nav-item:focus {
+	background-color: transparent
+}
+
+.dle_theme_dark .tox .tox-dialog__header {
+	background-color: rgba(0, 0, 0, .2);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	color: rgba(255, 255, 255, .5);
+	padding: 4px 10px 2px 16px
+}
+
+.dle_theme_dark .tox .tox-button--naked {
+	color: rgba(255, 255, 255, .5)
+}
+
+.dle_theme_dark .tox-dialog .tox-notification--info {
+	background-color: #555555;
+	border-color: #7b7b7b;
+}
+
+.dle_theme_dark .tox .tox-notification__body {
+	color: rgba(255, 255, 255, .6);
+}
+
+.tox .tox-dialog__title {
+	font-size: .875rem;
+	font-weight: 500;
+	text-shadow: 0 1px #333
+}
+
+.dle_theme_dark .tox .tox-dialog__title {
+	text-shadow: 0 1px #000;
+	color: rgba(255, 255, 255, .7)
+}
+
+.dle_theme_dark .tox .tox-dialog__body-nav-item--active {
+	color: rgba(255, 255, 255, .5)
+}
+
+.tox .tox-label, .tox .tox-toolbar-label {
+	font-size: .9rem;
+	margin-bottom: 0.188rem;
+	margin-top: 0.313rem
+}
+
+.tox .tox-listbox__select-label {
+	font-size: .85rem
+}
+
+.tox .tox-checkbox__icons {
+	margin-left: -0.438rem;
+	width: 1.5rem;
+	height: 1.5rem
+}
+
+.tox .tox-listboxfield .tox-listbox--select, .tox .tox-textarea, .tox .tox-textfield, .tox .tox-toolbar-textfield {
+	font-size: .9rem;
+	border-radius: 0.313rem
+}
+
+.tox:not([dir=rtl]) .tox-checkbox__label {
+	font-size: .85rem;
+	color: rgba(34, 47, 62, .7)
+}
+
+.dle_theme_dark .tox:not([dir=rtl]) .tox-checkbox__label {
+	color: rgba(255, 255, 255, .5)
+}
+
+.tox .tox-dialog__footer {
+	border-top: 1px solid #ddd;
+	background-color: #f5f5f5;
+	box-shadow: inset 0 1px 0 #ffffff
+}
+
+.dle_theme_dark .tox .tox-dialog__footer {
+	color: rgba(255, 255, 255, .5);
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	background-color: rgba(0, 0, 0, .2);
+	box-shadow: inherit
+}
+
+.tox .tox-statusbar {
+	border-top: 1px solid #ddd;
+	background-color: #f5f5f5;
+	box-shadow: inset 0 1px 0 #ffffff;
+	font-size: .85rem;
+	height: 1.125rem
+}
+
+.tox-pop .tox-pop__dialog .tox-toolbar {
+	padding: 0.188rem 0;
+	margin-top: -0.125rem
+}
+
+.tox .tox-dialog {
+	border-radius: 0.375rem;
+	max-height: calc(100vh - 8px* 2) !important;
+}
+
+.tox .tox-button, .tox .tox-button:hover:not(:disabled), .tox .tox-button:focus:not(:disabled) {
+	background-color: #009688;
+	border-color: #009688;
+	text-shadow: 1px 1px 2px rgba(51,51,51,.5);
+}
+
+.tox-fullscreen .tox-editor-container {
+	width: 100%;
+	max-width: 64rem;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 16px 16px -10px rgba(34,47,62,.15),0 0 40px 1px rgba(34,47,62,.15)
+}
+
+.tox-fullscreen .tox-statusbar {
+	width: 100%;
+	max-width: 64rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tox.tox-tinymce.tox-fullscreen {
+	background: #f1f5f9
+}
+
+.dle_theme_dark .tox.tox-tinymce.tox-fullscreen {
+    background: #393939;
+}
+
+.dle_theme_a .tox .tox-button, .dle_theme_a .tox .tox-button:hover:not(:disabled), .dle_theme_a .tox .tox-button:focus:not(:disabled) {
+	background-color: #EF5350;
+	border-color: #EF5350
+}
+
+.dle_theme_b .tox .tox-button, .dle_theme_b .tox .tox-button:hover:not(:disabled), .dle_theme_b .tox .tox-button:focus:not(:disabled) {
+	background-color: #0097A7;
+	border-color: #0097A7
+}
+
+.dle_theme_d .tox .tox-button, .dle_theme_d .tox .tox-button:hover:not(:disabled), .dle_theme_d .tox .tox-button:focus:not(:disabled) {
+	background-color: #5C6BC0;
+	border-color: #5C6BC0
+}
+
+.dle_theme_a .tox .tox-button, .dle_theme_a .tox .tox-button:hover:not(:disabled), .dle_theme_a .tox .tox-button:focus:not(:disabled) {
+	background-color: #EF5350;
+	border-color: #EF5350
+}
+
+.dle_theme_e .tox .tox-button, .dle_theme_e .tox .tox-button:hover:not(:disabled), .dle_theme_e .tox .tox-button:focus:not(:disabled) {
+	background-color: #EF5350;
+	border-color: #EF5350
+}
+
+.dle_theme_h .tox .tox-button, .dle_theme_h .tox .tox-button:hover:not(:disabled), .dle_theme_h .tox .tox-button:focus:not(:disabled) {
+	background-color: #2196F3;
+	border-color: #2196F3
+}
+
+.dle_theme_j .tox .tox-button, .dle_theme_j .tox .tox-button:hover:not(:disabled), .dle_theme_j .tox .tox-button:focus:not(:disabled) {
+	background-color: rgb(20, 78, 99);
+	border-color: rgb(20, 78, 99)
+}
+
+.tox .tox-button--naked {
+	background-color: transparent !important;
+	border-color: transparent !important;
+	box-shadow: unset;
+	color: #222f3e
+}
+
+.tox .tox-button--naked:hover:not(:disabled), .tox .tox-button--naked:focus:not(:disabled) {
+	background-color: rgba(34, 47, 62, .12) !important;
+	border-color: transparent !important;
+	box-shadow: unset;
+	color: #222f3e
+}
+
+.tox input.tox-checkbox__input:focus+.tox-checkbox__icons {
+	box-shadow: none
+}
+
+.tox.tox-tinymce-aux .tox-toolbar__overflow {
+	background-color: #f6f6f6
+}
+
+.dle_theme_dark .tox.tox-tinymce-aux .tox-toolbar__overflow {
+	background-color: #495264
+}
+.tox .tox-tbtn--enabled, .tox .tox-tbtn--enabled:hover, .tox .tox-collection--toolbar .tox-collection__item--enabled {
+	background: rgb(0 0 0 / 15%);
+	color: #222f3e;
+}
+.tox .tox-number-input input:hover {
+    background: rgb(0 0 0 / 8%);
+    color: #222f3e;
+}
+
+.tox .tox-dialog__body textarea[data-mce-name="qttext"] {
+    height: 12.5rem;
+}
+
+.dle_theme_dark .tox .tox-number-input input:hover {
+    color: #fff;
+}
+
+
+.tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):focus, .tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):focus-visible, .tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):hover {
+	background: rgb(0 0 0 / 8%);
+	border: rgb(0 0 0 / 8%);
+	color: #222f3e;
+}
+
+.tox .tox-number-input button:active {
+	background: rgb(0 0 0 / 8%);
+	border: rgb(0 0 0 / 8%);
+	color: #222f3e;
+}
+.dle_theme_dark .tox .tox-number-input button:active {
+	color: #fff;
+}
+
+.tox .tox-number-input button:hover {
+	background: rgb(0 0 0 / 8%);
+	border: rgb(0 0 0 / 8%);
+	color: #222f3e;
+}
+
+.tox .tox-tbtn.tox-tbtn--enabled:active, .tox .tox-tbtn.tox-tbtn--enabled:focus, .tox .tox-tbtn.tox-tbtn--enabled:focus-visible, .tox .tox-tbtn.tox-tbtn--enabled:hover {
+    background: rgb(0 0 0 / 8%);
+    color: #222f3e;
+}
+
+.dle_theme_dark .tox .tox-tbtn.tox-tbtn--enabled:active, .dle_theme_dark .tox .tox-tbtn.tox-tbtn--enabled:focus, .dle_theme_dark .tox .tox-tbtn.tox-tbtn--enabled:focus-visible, .dle_theme_dark .tox .tox-tbtn.tox-tbtn--enabled:hover {
+    color: #fff;
+}
+
+.tox .tox-tbtn.tox-tbtn--enabled {
+    background: rgb(0 0 0 / 8%);
+    border: rgb(0 0 0 / 8%);
+}
+
+.tox .tox-number-input button:hover svg {
+    fill: #222f3e;
+}
+.dle_theme_dark .tox .tox-number-input button:hover svg {
+    fill: #fff;
+}
+.dle_theme_dark .tox .tox-number-input button:hover {
+	color: #fff;
+}
+
+.dle_theme_dark .tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):focus, .dle_theme_dark .tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):focus-visible, .dle_theme_dark .tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):hover {
+	color: #fff;
+}
+
+.tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn--enabled:active, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn--enabled:focus, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn--enabled:focus-visible, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn--enabled:hover {
+    background: rgb(0 0 0 / 8%);
+}
+
+.tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron:active, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron:focus, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron:focus-visible, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron:hover {
+    background: rgb(0 0 0 / 8%);
+}
+
+.tox .tox-split-button:active, .tox .tox-split-button:focus, .tox .tox-split-button:focus-visible, .tox .tox-split-button:hover {
+    box-shadow: unset;
+}
+
+.tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn--enabled {
+    background: rgb(0 0 0 / 5%);
+}
+.tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron.tox-tbtn--enabled:active, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron.tox-tbtn--enabled:focus, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron.tox-tbtn--enabled:focus-visible, .tox .tox-split-button:not(.tox-tbtn--disabled) .tox-tbtn.tox-split-button__chevron.tox-tbtn--enabled:hover {
+	background: rgb(0 0 0 / 15%);
+}
+.tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):active {
+	background: rgb(0 0 0 / 15%);
+	border: rgb(0 0 0 / 15%);
+	color: #222f3e;
+}
+.dle_theme_dark .tox .tox-tbtn:not(.tox-tbtn--disabled):not(.tox-tbtn--enabled):active {
+	color: #fff;
+}
+
+.tox .tox-collection--toolbar .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+    color: #222f3e;
+}
+.dle_theme_dark .tox .tox-collection--toolbar .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+	color: #fff;
+}
+
+.tox .tox-collection--toolbar .tox-collection__item--active {
+    background-color: rgb(0 0 0 / 15%);
+}
+
+.tox .tox-tbtn--select.tox-tbtn--active {
+    background: rgb(0 0 0 / 15%);
+    color: #222f3e;
+}
+
+.dle_theme_dark .tox .tox-tbtn--select.tox-tbtn--active {
+    color: #fff;
+}
+
+.tox .tox-collection--list:not(.tox-background-menu) .tox-collection__item.tox-collection__item--active:not(.tox-collection__item--state-disabled):not(.tox-fancymenuitem) {
+    color: #222f3e;
+}
+
+.dle_theme_dark .tox .tox-collection--list:not(.tox-background-menu) .tox-collection__item.tox-collection__item--active:not(.tox-collection__item--state-disabled):not(.tox-fancymenuitem) {
+    color: #fff;
+}
+
+.tox .tox-collection--list:not(.tox-background-menu) .tox-collection__item.tox-collection__item--active:not(.tox-collection__item--state-disabled):not(.tox-fancymenuitem) svg {
+    fill: #222f3e;
+}
+
+.dle_theme_dark .tox .tox-collection--list:not(.tox-background-menu) .tox-collection__item.tox-collection__item--active:not(.tox-collection__item--state-disabled):not(.tox-fancymenuitem) svg {
+    fill: #fff;
+}
+
+.tox .tox-menu {
+	border-radius: 0.188rem;
+	box-shadow: 0 0 0 1px rgb(0 0 0 / 6%), 0 5px 15px -5px rgb(0 0 0 / 40%)
+}
+
+.tox .tox-split-button:hover {
+	box-shadow: 0 0 0 1px rgb(255 255 255 / 39%) inset
+}
+
+.tox .tox-collection--list .tox-collection__item--active, .tox .tox-mbtn--active, .tox .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+	background-color: rgb(127 127 127 / 20%)
+}
+
+.dle_theme_dark .tox .tox-collection--list .tox-collection__item--enabled {
+	background-color: #495264
+}
+
+.dle_theme_dark .tox .tox-collection--list .tox-collection__item--active, .dle_theme_dark .tox .tox-mbtn--active, .dle_theme_dark .tox .tox-mbtn:focus:not(:disabled), .dle_theme_dark .tox .tox-tbtn--enabled, .dle_theme_dark .tox .tox-tbtn--enabled:hover, .dle_theme_dark .tox .tox-collection--toolbar .tox-collection__item--active {
+	background-color: #757d87
+}
+
+.dle_theme_dark .tox .tox-tbtn:focus, .dle_theme_dark .tox .tox-tbtn:hover, .dle_theme_dark .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active), .dle_theme_dark .tox .tox-split-button:focus {
+	background: #757d87;
+	color: #fff
+}
+
+.tox .tox-listboxfield .tox-listbox--select:focus, .tox .tox-textarea:focus, .tox .tox-textfield:focus {
+	background-color: #fff;
+	box-shadow: none;
+	outline: 0
+}
+
+.dle_theme_dark .tox .tox-statusbar {
+	border-top: 1px solid #000;
+	background-color: #495264;
+	box-shadow: inherit
+}
+
+.tox .tox-dialog-wrap__backdrop {
+	background-color: rgba(0, 0, 0, .2)
+}
+
+.tox .tox-dialog__footer .tox-button {
+	margin-bottom: 0;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	font-size: .9rem;
+	border-radius: .3rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+	transition: all ease-in-out 0.15s;
+	border-width: 0;
+	font-weight: 400;
+	line-height: 1.6;
+	padding: 0.188rem 0.75rem
+}
+
+.tox .tox-dialog__footer .tox-button:hover:not(:disabled) {
+	box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%)
+}
+
+.tox .tox-dialog__footer .tox-button--secondary, .tox .tox-button.tox-button--secondary  {
+	background-color: #888;
+	border-color: #888;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(51,51,51,.5);
+}
+
+.tox .tox-dialog__footer .tox-button--secondary:hover:not(:disabled),  .tox .tox-button--secondary:hover:not(:disabled) {
+	background-color: #888;
+	border-color: #888;
+	color: #fff
+}
+
+.tox .tox-button[disabled] {
+	background-color: #a7a6a6;
+	border-color: #a7a6a6;
+}
+
+.tox .tox-custom-editor:focus-within, .tox .tox-listboxfield .tox-listbox--select:focus, .tox .tox-textarea-wrap:focus-within, .tox .tox-textarea:focus, .tox .tox-textfield:focus, .tox .tox-selectfield select:focus {
+	box-shadow: none;
+	border-color: #009688;
+}
+.tox .tox-textarea-wrap .tox-textarea {
+    border: 1px solid #a7a6a6ab;
+}
+
+.tox .tox-listboxfield .tox-listbox--select, .tox .tox-textarea, .tox .tox-textarea-wrap .tox-textarea:focus, .tox .tox-textfield, .tox .tox-toolbar-textfield {
+	font-size: .9rem;
+	line-height: 1.5;
+	padding: 0.188rem 0.313rem 0.188rem 0.313rem;
+	border: 1px solid #a7a6a6ab;
+}
+.tox .tox-textarea-wrap .tox-textarea:focus {
+    border: 1px solid #009688;
+}
+.tox .tox-tbtn--bespoke .tox-tbtn__select-label {
+	max-width: 7em;
+	width: auto !important
+}
+
+.dle_theme_dark  .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_dark .tox .tox-textarea:focus, .dle_theme_dark .tox .tox-textfield:focus {
+	background-color: inherit
+}
+
+.dlecomments-editor .tox .tox-statusbar, .dlefastedit-editor .tox .tox-statusbar {
+	display: block;
+	border-top: 0;
+	background-color: transparent;
+	box-shadow: none;
+	height: .9rem;
+}
+
+.dle_theme_dark .dlecomments-editor .tox .tox-statusbar, .dle_theme_dark .dlefastedit-editor .tox .tox-statusbar {
+	background-color: #282c39
+}
+
+.dle_theme_dark .tox .tox-pop.tox-pop--bottom::after {
+	border-color: #495264 transparent transparent transparent
+}
+
+.dle_theme_dark.dlecomments-editor .tox .tox-statusbar {
+	background-color: #282c39
+}
+
+.tox-collection__item-label pre {
+	background-color: transparent !important
+}
+
+.table-footer {
+	border-spacing: 4px
+}
+
+.tox-dialog .tox-notification {
+	display: block;
+	border-radius: 0.313rem
+}
+
+.tox-notification__icon {
+	display: none
+}
+
+.tox-dialog .tox-notification--info {
+	color: #00626e;
+	background-color: #d6f4f8;
+	border-color: #14c1d7;
+	max-width: 100%;
+}
+
+.tox-dialog .tox-notification__body {
+	font-size: .85rem;
+	text-align: left;
+	padding: 0.125rem
+}
+
+.tox .tox-pop__dialog .tox-toolbar-textfield {
+	min-width: 350px;
+	max-width: 400px
+}
+
+.tox .tox-listboxfield .tox-listbox--select:focus, .tox .tox-textarea:focus, .tox .tox-textfield:focus {
+	border-color: #009688
+}
+
+.dle_theme_j .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_j .tox .tox-textarea:focus, .dle_theme_j .tox .tox-textfield:focus, .dle_theme_j .tox .tox-textarea-wrap:focus-within, .dle_theme_j .tox .tox-selectfield select:focus{
+	border-color: #517fa4
+}
+
+.tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #009688
+}
+
+.tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #009688;
+	color: rgba(34, 47, 62, .7)
+}
+
+.tox .tox-dialog__body-nav {
+	padding: 1rem 1rem
+}
+
+.tox .tox-dialog__body-nav-item {
+	font-size: 0.875rem;
+	line-height: 1.5
+}
+
+.dle_theme_a .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_a .tox .tox-textarea:focus, .dle_theme_a .tox .tox-textfield:focus {
+	border-color: #E91E63
+}
+
+.dle_theme_a .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #E91E63
+}
+
+.dle_theme_a .tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #E91E63
+}
+
+.dle_theme_b .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_b .tox .tox-textarea:focus, .dle_theme_b .tox .tox-textfield:focus, .dle_theme_i .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_i .tox .tox-textarea:focus, .dle_theme_i .tox .tox-textfield:focus {
+	border-color: #00BCD4
+}
+
+.dle_theme_b .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg, .dle_theme_i .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #00BCD4
+}
+
+.dle_theme_b .tox .tox-dialog__body-nav-item--active, .dle_theme_i .tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #00BCD4
+}
+
+.dle_theme_c .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_c .tox .tox-textarea:focus, .dle_theme_c .tox .tox-textfield:focus, .dle_theme_h .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_h .tox .tox-textarea:focus, .dle_theme_h .tox .tox-textfield:focus {
+	border-color: #2196F3
+}
+
+.dle_theme_c .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg, .dle_theme_h .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #2196F3
+}
+
+.dle_theme_c .tox .tox-dialog__body-nav-item--active, .dle_theme_h .tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #2196F3
+}
+
+.dle_theme_d .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_d .tox .tox-textarea:focus, .dle_theme_d .tox .tox-textfield:focus {
+	border-color: #673AB7
+}
+
+.dle_theme_d .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #673AB7
+}
+
+.dle_theme_d .tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #673AB7
+}
+
+.dle_theme_e .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_e .tox .tox-textarea:focus, .dle_theme_e .tox .tox-textfield:focus {
+	border-color: #F44336
+}
+
+.dle_theme_e .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #F44336
+}
+
+.dle_theme_e .tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #F44336
+}
+
+.dle_theme_e .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_e .tox .tox-textarea:focus, .dle_theme_e .tox .tox-textfield:focus {
+	border-color: #F44336
+}
+
+.dle_theme_e .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #F44336
+}
+
+.dle_theme_e .tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #F44336
+}
+
+.dle_theme_dark .tox .tox-listboxfield .tox-listbox--select:focus, .dle_theme_dark .tox .tox-textarea:focus, .dle_theme_dark .tox .tox-textfield:focus {
+	border-color: #1976D2
+}
+
+.dle_theme_dark .tox .tox-checkbox__icons .tox-checkbox-icon__checked svg {
+	fill: #1976D2
+}
+
+.dle_theme_dark .tox .tox-dialog__body-nav-item--active {
+	border-bottom: 2px solid #1976D2
+}
+
+@media (max-width:1024px) {
+	.tox-fullscreen .tox-edit-area {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+		box-shadow: none
+	}
+
+}
+
+@media (max-width:768px) {
+	.table-footer {
+		display: none
+	}
+
+	.tox .tox-pop__dialog .tox-toolbar-textfield {
+		min-width: 200px;
+		max-width: 200px
+	}
+
+	.tox .tox-toolbar__overflow {
+		border-top: none !important;
+		border-bottom: none !important;
+		box-shadow: none
+	}
+	.editor-panel .tox-tinymce {
+		box-shadow: none;
+	}
+
+	.editor-panel .tox:not(.tox-tinymce-inline) .tox-editor-header {
+		box-shadow: none;
+	}
+
+	.editor-panel {
+		border-top: 1px solid #a7a6a6ab;
+	}
+
+}
+
+.tox-promotion {
+	display: none !important
+}
+
+.tox .tox-mbtn {
+	color: #222f3e
+}
+
+.tox .tox-number-input .tox-input-wrapper:focus::after, .tox .tox-number-input .tox-input-wrapper:has(input:focus)::after, .tox .tox-number-input button:focus::after {
+	box-shadow: 0 0 0 1px #979797;
+}
+
+.dle_theme_dark .tox .tox-mbtn {
+	color: #fff
+}
+
+.tox .tox-tbtn svg {
+	fill: #222f3e
+}
+
+.dle_theme_dark .tox .tox-tbtn svg {
+	fill: #fff
+}
+
+.tox .tox-tbtn--disabled svg, .tox .tox-tbtn--disabled:hover svg, .tox .tox-tbtn:disabled svg, .tox .tox-tbtn:disabled:hover svg, .tox .tox-split-button__chevron svg {
+	fill: rgba(34, 47, 62, .5) !important
+}
+.tox .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+	color: inherit;
+}
+.dle_theme_dark .tox .tox-tbtn--disabled svg, .dle_theme_dark .tox .tox-tbtn--disabled:hover svg, .dle_theme_dark .tox .tox-tbtn:disabled svg, .dle_theme_dark .tox .tox-tbtn:disabled:hover svg, .dle_theme_dark .tox .tox-split-button__chevron svg {
+	fill: rgba(255, 255, 255, .5) !important
+}
+
+.dle_theme_dark .tox .tox-menu {
+	background-color: #495264;
+	border: 1px solid rgba(255, 255, 255, .15)
+}
+
+.dle_theme_dark .tox .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled), .dle_theme_dark .tox .tox-collection__item {
+	color: #fff
+}
+
+.dle_theme_dark .tox .tox-collection__item--state-disabled {
+	color: rgba(255, 255, 255, .5)
+}
+
+.dle_theme_dark .tox .tox-collection__item-accessory {
+	color: rgba(255, 255, 255, .5)
+}
+
+.dle_theme_dark .tox .tox-collection--list .tox-collection__group {
+	border-color: rgba(255, 255, 255, .5)
+}
+
+.dle_theme_dark .tox .tox-dialog {
+	background-color: #495264;
+	border-color: #161f29
+}
+
+.dle_theme_dark .tox .tox-listboxfield .tox-listbox--select, .dle_theme_dark .tox .tox-textarea, .dle_theme_dark .tox .tox-textfield, .dle_theme_dark .tox .tox-toolbar-textfield {
+	background-color: transparent;
+	border-color: #a7a6a6ab;
+	color: #fff
+}
+
+.dle_theme_dark .tox .tox-label, .dle_theme_dark .tox .tox-toolbar-label {
+	color: rgba(255, 255, 255, .5)
+}
+
+.dle_theme_dark .tox .tox-dialog__body-nav-item {
+	color: rgba(255, 255, 255, .5)
+}
+.dle_theme_dark .tox-tinymce {
+	border:  1px solid transparent;
+}
+.tox .tox-listbox__select-label {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.tox .tox-collection__item-icon img {
+	max-width: 22px;
+	max-height: 22px;
+	border-radius: 50%
+}
+
+.tox:not([dir=rtl]) .helpsource {
+	position: absolute;
+    left: 10px;
+}
+.tox[dir=rtl] .helpsource {
+	position: absolute;
+    right: 10px;
+}
+.dle_theme_j .tox .tox-dialog__header {
+	background-color: #517fa4;
+	border-bottom: 1px solid #517fa4
+}
+.tox .tox-textarea-wrap {
+	border: none;
+}
+
+.dle_theme_j .tox .tox-dialog__footer {
+	border-top: 1px solid #e2e8f0;
+	background-color: rgb(248 250 252);
+	box-shadow: inset 0 1px 0 #fff
+}
+
+
+.mobilewseditor {
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 4px;
+  transition: box-shadow 0.15s;
+  padding-bottom: 0;
+}
+
+.mobilewseditor  .tox-tinymce {
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.mobilewseditor .tox .tox-toolbar__primary {
+	border-bottom: none !important;
+	border: 0;
+}
+
+.mobilewseditor.focused {
+  box-shadow: 0 0 0 2px rgba(28, 108, 161, 0.08) inset;
+}
+
+.mobilewseditor .tox-tinymce {
+  transition: min-height 0.25s, padding-bottom 0.25s;
+  min-height: 0;
+  outline: none;
+}
+
+.mobilewseditor.focused .tox-tinymce {
+  min-height: 140px;
+}
+
+.mobilewseditor .tox-editor-header {
+  display: none;
+}
+
+.mobilewseditor.focused .tox-editor-header {
+  display: block;
+}
+
+.editor-style-light .tox .tox-toolbar, .editor-style-light .tox .tox-toolbar__overflow, .editor-style-light .tox .tox-toolbar__primary {
+	background: transparent;
+}
+
+.editor-style-light .tox .tox-number-input {
+	background: #fff;
+}
+.editor-style-light .tox .tox-toolbar__overflow {
+	background: #fff;
+}
+
+.editor-style-light .tox .tox-pop__dialog {
+	background-color: #fff;
+}
+
+.dle_theme_dark.editor-style-light .tox .tox-toolbar__overflow, .dle_theme_dark.editor-style-light .tox .tox-pop__dialog, .dle_theme_dark.editor-style-light .tox .tox-number-input {
+	background: #282c39;
+}
+
+.editor-style-light .tox:not(.tox-tinymce-inline) .tox-editor-header {
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.editor-style-light .editor-panel {
+	border-top: none;
+}
+
+.editor-style-light .tox-tinymce {
+    border: 1px dashed #a7a6a6ab;
+}
+
+.editor-style-light .tox-tinymce.tox-fullscreen {
+    border: none;
+}
+
+.editor-style-light .tox .tox-toolbar-overlord .tox-toolbar+.tox-toolbar{
+	border-top: 1px dashed #a7a6a6ab;
+}
+
+.editor-style-light .tox .tox-toolbar:first-child {
+	border-top: none;
+}
+
+.editor-style-light .tox .tox-tbtn svg {
+    fill: #4a4a4a;
+}
+
+.editor-style-light.dle_theme_dark .tox .tox-toolbar-overlord {
+    background-color: #282c39;
+}
+
+.editor-style-light.dle_theme_dark .tox .tox-tbtn svg {
+    fill: #bdbdbd;
+}
+
+.tox .tox-toolbar-overlord .tox-toolbar+.tox-toolbar {
+	border-top: 1px solid #ddd;
+	box-shadow: inset 0 1px 0 #ffffff;
+}
+.dle_theme_dark .tox .tox-toolbar-overlord .tox-toolbar+.tox-toolbar{
+	box-shadow: none;
+}
+.tox .table-footer .tox-checkbox__icons {
+	width: 1rem;
+	height: 1rem;
+}
+
+.tox .table-footer .tox-checkbox {
+	height: 1.5rem;
+}

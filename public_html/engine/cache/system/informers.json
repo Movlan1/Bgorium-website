@@ -1,0 +1,1 @@
+{"1":{"id":"1","tag":"dle","descr":"Новости","category":"0","url":"https://www.ixbt.com/export/news.rss","template":"informer","news_max":"3","tmax":"0","dmax":"200","approve":"1","rss_date_format":"j F Y H:i"}}

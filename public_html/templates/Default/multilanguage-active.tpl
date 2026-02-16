@@ -1,0 +1,1 @@
+[link][active]{code}[/active][/link]

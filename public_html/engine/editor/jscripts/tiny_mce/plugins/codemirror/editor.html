@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../../../ace/code_editor.js"></script>
+        <script>
+
+var tinymce,     // Reference to TinyMCE
+	editor,      // Reference to TinyMCE editor
+	aceEditor,   // Ace Editor instance
+	chr = 0,     // Unused utf-8 character, placeholder for cursor
+	isMac = /macintosh|mac os/i.test(navigator.userAgent);
+
+function inArray(key, arr)
+{
+	"use strict";
+	arr = '|' + arr.join('|') + '|';
+	return arr.indexOf('|'+key+'|') != -1;
+}
+
+(function()
+{// Initialise (before load)
+	"use strict";
+
+	tinymce = parent.tinymce;
+	editor = tinymce.activeEditor;
+
+	window.onload = start;
+}());
+
+function start()
+{// Initialise (on load)
+	"use strict";
+
+	if (typeof(window.ace) !== 'object') {
+		alert('Ace Editor not found, aborting...');
+		return;
+	}
+
+	var parenthtmlElement = parent.document.getElementsByTagName("html")[0];
+
+	if( parenthtmlElement.className ) {
+		var htmlElement = document.querySelector("html");
+		var htmlclasses = htmlElement.classList;
+		htmlclasses.add(parenthtmlElement.className);
+	}
+
+	// Create legend for keyboard shortcuts for find & replace:
+	var head = parent.document.querySelectorAll((tinymce.majorVersion < 5) ? '.mce-foot': '.tox-dialog__footer')[0],
+		div = parent.document.createElement('div'),
+		td1 = '<td style="font-size:80%;background:#777;color:#fff;padding:0 0.25rem;vertical-align: middle;">',
+		td2 = '<td style="font-size:80%;padding-left:0.313rem;padding-right:0.313rem;vertical-align: middle;" class="tox-checkbox__label">';
+	div.innerHTML = '<table cellspacing="0" cellpadding="0" class="table-footer"><tr>' + td1 + (isMac ? '&#8984;-F' : 'Ctrl-F</td>') + td2 + tinymce.translate('Start search') + '</td>' + td2 + '<label class="tox-checkbox"><input type="checkbox" class="tox-checkbox__input" id="ace-usewordwrap" value="1"><div class="tox-checkbox__icons"><span class="tox-icon tox-checkbox-icon__checked"><svg width="24" height="24" focusable="false"><path fill-rule="nonzero" d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Zm3.6 10.9L7 12.3a.7.7 0 0 0-1 1L9.6 17 18 8.6a.7.7 0 0 0 0-1 .7.7 0 0 0-1 0l-7.4 7.3Z"></path></svg></span><span class="tox-icon tox-checkbox-icon__unchecked"><svg width="24" height="24" focusable="false"><path fill-rule="nonzero" d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Zm0 1a1 1 0 0 0-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6Z"></path></svg></span></div><span unselectable="on" class="tox-checkbox__label" for="ace-usewordwrap" style="user-select: none;">' + tinymce.translate('Word Wrap') + '</span></label>' + '</td></tr></table>';
+	div.className = 'helpsource';
+	head.appendChild(div);
+
+	var html = editor.getContent();
+    html = html.replace(/<br>/g, "\n<br>");
+	html = html.replace(/<span\s+id="CmCaReT"([^>]*)>([^<]*)<\/span>/gm, String.fromCharCode(chr));
+	html = html_beautify(html, { indent_size: 2 } );
+    
+	editor.dom.remove(editor.dom.select('span#CmCaReT'));
+
+    tinymce.each(editor.contextToolbars, function(toolbar) {console.log(toolbar);
+        if (toolbar.panel) { 
+            toolbar.panel.hide(); 
+        } 
+    });
+
+    var use_wrap = true;
+    var p = parent;
+    var savedData = null;
+    
+    try {
+        savedData = localStorage.getItem('ace-usewordwrap');
+        savedData = JSON.parse(savedData);
+    } catch (e) { 
+        savedData = true;
+    }
+    
+    if (savedData === false) {
+        use_wrap = false;
+        p.$('#ace-usewordwrap').prop('checked', false);
+    } else {
+        p.$('#ace-usewordwrap').prop('checked', true);
+    }
+
+	// Initialize Ace Editor
+	aceEditor = ace.edit("editor", {
+            mode: 'ace/mode/html',
+    		indentedSoftWrap: false, 
+            wrap: use_wrap,
+            tabSize: 2,
+            showPrintMargin: false,
+            enableBasicAutocompletion: true,
+        	enableLiveAutocompletion: true,
+        	enableSnippets: false,
+        	behavioursEnabled: false,
+            useSvgGutterIcons: true,
+            value: html
+          });
+
+    if (aceEditor.completer) delete aceEditor.completer.autoSelect
+    var Autocomplete = ace.require("ace/autocomplete").Autocomplete;
+    Autocomplete.prototype.__defineSetter__("autoSelect", function () { })
+    Autocomplete.prototype.__defineGetter__("autoSelect", function () { })
+
+    if(p.$('body').hasClass('dle_theme_dark')){
+        aceEditor.setTheme("ace/theme/github_dark");
+        document.body.classList.add("dle_theme_dark");
+    } else {
+    	 aceEditor.setTheme("ace/theme/github_light_default");
+    }
+
+	if ( typeof(p.editor_messages) === 'object' ) {
+		ace.config.setMessages(p.editor_messages);
+	}
+
+    if (use_wrap) {
+        aceEditor.session.setOption('wrapMethod', 'text');
+    }
+    
+    p.$('#ace-usewordwrap').change(function () {
+        
+        if (p.$(this).attr('type') === 'checkbox') {
+           var key = p.$(this).attr('id');
+           var value = p.$(this).is(':checked');
+
+           aceEditor.setOption("wrap", value);
+
+           if( value ) {
+                aceEditor.session.setOption('wrapMethod', 'text');
+           }
+
+           try {
+               localStorage.setItem(key, value);
+            } catch (e) { }
+
+         }
+
+    });
+
+	aceEditor.focus();
+	// Set cursor position
+	var position = html.indexOf(String.fromCharCode(chr));
+	if(position > -1) {
+		var pos = aceEditor.session.doc.indexToPosition(position);
+		aceEditor.gotoLine(pos.row + 1, pos.column);
+		const startPos = aceEditor.session.doc.indexToPosition(position);
+    	const endPos = aceEditor.session.doc.indexToPosition(position + String.fromCharCode(chr).length);
+    	aceEditor.session.remove({ start: startPos, end: endPos });
+        setTimeout(() => {
+            aceEditor.renderer.scrollCursorIntoView(pos, 0.5);
+        }, 50);
+	} 
+
+}
+
+function adjustCursor(cursor, html) {
+    const cursorLength = cursor.length;
+    const cursorPos = html.indexOf(cursor);
+    if (cursorPos === -1) return html;
+
+    const ranges = findTextRanges(html);
+    let isInsideValid = ranges.some(range => cursorPos >= range.start && cursorPos < range.end);
+    if (isInsideValid) return html;
+
+    const newHtml = html.slice(0, cursorPos) + html.slice(cursorPos + cursorLength);
+
+    const newRanges = findTextRanges(newHtml);
+    if (newRanges.length === 0) return newHtml;
+
+    const adjustedPos = Math.min(cursorPos, newHtml.length);
+    let closest = { distance: Infinity, pos: -1 };
+
+    for (const range of newRanges) {
+        const startDist = Math.abs(range.start - adjustedPos);
+        const endDist = Math.abs(range.end - adjustedPos);
+        const minDist = Math.min(startDist, endDist);
+        const insertPos = startDist <= endDist ? range.start : range.end;
+
+        if (minDist < closest.distance) {
+            closest = { distance: minDist, pos: insertPos };
+        }
+    }
+
+    return newHtml.slice(0, closest.pos) + cursor + newHtml.slice(closest.pos);
+}
+
+function fixCursorInEntity(cursor, html) {
+	const cursorPos = html.indexOf(cursor);
+    const cursorLength = cursor.length;
+    const cursorEnd = cursorPos + cursorLength;
+   
+    let ampPos = html.lastIndexOf('&', cursorPos - 1 );
+    if (ampPos === -1 || ampPos > cursorPos) return html;
+
+    let semiPos = html.indexOf(';', cursorEnd);
+    if (semiPos === -1) return html;
+
+    const entityBody = html.slice(ampPos + 1, cursorPos) + 
+                       html.slice(cursorEnd, semiPos);
+
+    if (!/^[a-zA-Z0-9#]+$/.test(entityBody)) return html;
+
+    return html.slice(0, cursorPos) +
+           html.slice(cursorEnd, semiPos + 1) +
+           cursor +
+           html.slice(semiPos + 1);
+}
+
+function findTextRanges(html) {
+    const allowed = new Set(['p', 'div', 'span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'td']);
+    let stack = [];
+    let ranges = [];
+    let textStart = null;
+    let i = 0;
+
+    while (i < html.length) {
+        if (html[i] === '<') {
+            if (textStart !== null) {
+                if (stack.length > 0) ranges.push({ start: textStart, end: i });
+                textStart = null;
+            }
+
+            let isClosing = false;
+            let tagName = '';
+            i++;
+            if (html[i] === '/') {
+                isClosing = true;
+                i++;
+            }
+
+            while (i < html.length && !['>', ' ', '/'].includes(html[i])) {
+                tagName += html[i].toLowerCase();
+                i++;
+            }
+
+            while (i < html.length && html[i] !== '>') i++;
+            i++;
+
+            if (!isClosing) {
+                if (allowed.has(tagName)) stack.push(tagName);
+            } else {
+                if (stack.length > 0 && stack[stack.length - 1] === tagName) stack.pop();
+            }
+        } else {
+            if (textStart === null) textStart = i;
+            const nextTag = html.indexOf('<', i);
+            if (nextTag === -1) {
+                if (stack.length > 0) ranges.push({ start: textStart, end: html.length });
+                break;
+            } else {
+                if (stack.length > 0) ranges.push({ start: textStart, end: nextTag });
+                i = nextTag;
+                textStart = null;
+            }
+        }
+    }
+
+    return ranges;
+}
+
+function isInsideTag(cc, text) {
+	var pos = text.indexOf(cc);
+    var before = text.slice(0, pos);
+    var insideTag = before.lastIndexOf("<") > before.lastIndexOf(">");
+    return insideTag;
+}
+
+function submit() {
+	"use strict";
+
+	var cc = '&#x0;';
+
+	// Insert cursor placeholder
+	var cursor = aceEditor.getCursorPosition();
+	var pos = aceEditor.session.insert(cursor, cc);
+
+	var code = aceEditor.getValue();
+
+	if (code.search(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi) !== -1 || code.search(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi) !== -1) {
+		code = code.replace(cc, '');
+	}
+
+	code = fixCursorInEntity(cc, code);
+	code = adjustCursor(cc, code);
+
+	if(isInsideTag(cc, code)) {
+		code = code.replace(cc, '');
+	}
+
+	if( code.slice(-5) == cc ) {
+		code = code.slice(0, -5);
+		var index = code.lastIndexOf("</");
+
+		code = code.slice(0, index) + cc + code.slice(index);
+	}
+
+	code = code.replace(cc, '<span id="CmCaReT"></span>');
+
+	// Submit HTML to TinyMCE
+	editor.setContent(code);
+	
+	editor.nodeChanged();
+
+	var target = editor.dom.get('CmCaReT');
+
+	if (target) {
+		var parent = target.parentNode;
+		editor.selection.scrollIntoView(target);
+		editor.selection.setCursorLocation(parent, Array.prototype.indexOf.call(parent.childNodes, target) + 1);
+		target.remove();	
+	}
+
+}
+
+</script>
+        <style type="text/css">
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+html.htmlfontsize-50 {
+	font-size: .5rem
+}
+
+html.htmlfontsize-75 {
+	font-size: .75rem
+}
+html.htmlfontsize-80 {
+	font-size: .8rem
+}
+
+html.htmlfontsize-85 {
+	font-size: .85rem
+}
+
+html.htmlfontsize-90 {
+	font-size: .9rem
+}
+
+html.htmlfontsize-95 {
+	font-size: .95rem
+}
+
+html.htmlfontsize-105 {
+	font-size: 1.05rem
+}
+
+html.htmlfontsize-110 {
+	font-size: 1.1rem
+}
+
+html.htmlfontsize-115 {
+	font-size: 1.15rem
+}
+
+html.htmlfontsize-120 {
+	font-size: 1.2rem
+}
+
+html.htmlfontsize-125 {
+	font-size: 1.25rem
+}
+
+html.htmlfontsize-130 {
+	font-size: 1.3rem
+}
+
+html.htmlfontsize-135 {
+	font-size: 1.35rem
+}
+
+html.htmlfontsize-140 {
+	font-size: 1.4rem
+}
+
+html.htmlfontsize-145 {
+	font-size: 1.45rem
+}
+
+html.htmlfontsize-150 {
+	font-size: 1.5rem
+}
+
+html.htmlfontsize-175 {
+	font-size: 1.75rem
+}
+
+html.htmlfontsize-200 {
+	font-size: 2rem
+}
+
+#editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 0.83rem;
+    font-family: 'Menlo', 'Monaco', 'Ubuntu Mono', 'Lucida Console', 'Consolas', 'Source Code Pro', 'source-code-pro', monospace;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+.ace_icon_svg.ace_warning, .ace_icon_svg.ace_info {
+	display: none;
+}
+.ace_gutter-cell.ace_info, .ace_dark .ace_gutter-cell.ace_info, .ace_dark .ace_icon.ace_info, .ace_dark .ace_gutter-cell.ace_hint, .ace_dark .ace_icon.ace_hint {
+	background-image: none;
+}
+.ace_search {
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+}
+.dle_theme_dark #editor {
+    color: rgba(255,255,255,.9);
+    background-color: #282c39;
+}
+.dle_theme_dark .ace_search {
+    background-color: #848a96;
+    border: 1px solid #7a7c7f;
+	color: #ffffff;
+}
+
+.dle_theme_dark .ace_search_field, .dle_theme_dark .ace_searchbtn {
+    background-color: rgba(0,0,0,.2);
+    color: rgb(255, 255, 255);
+}
+.dle_theme_dark .ace_button {
+ color: rgb(255, 255, 255);
+}
+.dle_theme_dark  .ace_button:hover {
+    background-color: rgba(0,0,0,.2);
+}
+</style>
+    </head>
+    <body>
+        <div id="editor"></div>
+    </body>
+</html>

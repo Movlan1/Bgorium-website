@@ -1,0 +1,99 @@
+body{ font-size: .9rem; font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; height:100%; margin: 0; padding: 0; background: none; }
+img { border:0 none; }
+
+hr { color: #999; border: 0px none; border-top: dashed 1px #999; height: 1px; }
+input, select, textarea { outline:none; }
+form { margin:0px; padding: 0px; }
+table { border:0 none; }
+table td { padding: 0; }
+a { color: #4b719e; text-decoration:none; }
+a:hover { color: #4b719e; text-decoration: underline; }
+.navigation { color: #999898; }
+
+.edit, textarea, .xprofile input {
+    font-size: .9rem;
+	display: inline-block;
+    width: 250px;
+    padding: .35rem;
+    margin-bottom: .3rem;
+    vertical-align: middle;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    transition: border 0.2s linear 0s;
+    box-sizing: border-box;
+
+}
+
+textarea { 
+	width: 100%;
+}
+
+.edit:focus, textarea:focus, .xprofile input:focus {
+    border-color: #109aceed;
+}
+
+label {
+	cursor: pointer;
+	display: block;
+    margin-bottom: .3rem;
+}
+
+input[type=checkbox], input[type=radio]{
+  color: #0c5f7eed;
+  flex-shrink: 0;
+  width: 1.12rem;
+  height: 1.12rem;
+  margin: -0.188rem 0.625rem 0 0;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid #0c5f7eed;
+  vertical-align: middle;
+}
+
+input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%230c5f7eed' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%230c5f7eed'/%3e%3c/svg%3e");
+}
+
+input[type=checkbox] {
+    border-radius: .25rem;
+}
+
+input[type=radio] {
+    border-radius: 50%;
+}
+
+select {
+    font-size: .9rem;
+    line-height: 1.5;
+    display: inline-block;
+    width: auto;
+    padding: .35rem 2.2rem .35rem .35rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    appearance: none;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    margin-bottom: .3rem;
+}
+
+select[multiple] {
+    padding-right: .75rem;
+    background-image: none;
+}
+.img-circle {
+    width: 100px;
+    height: auto;
+    color: #858e96b3;
+}

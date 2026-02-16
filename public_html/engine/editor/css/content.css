@@ -1,0 +1,757 @@
+@import url('../../skins/fonts/inter/inter.css');
+
+body {
+	font-family: Inter, system-ui, sans-serif;
+    font-size: .9rem;
+    line-height: 1.5;
+    background-color:#ffffff;
+    color:#333333;
+    margin:0px;
+    padding: .625rem;
+    min-height: 20px;
+    padding-left: .625rem!important;
+    padding-right: .625rem!important;
+}
+
+.mce-content-body:not([dir=rtl])[data-mce-placeholder]:not(.mce-visualblocks)::before {
+    left: auto;
+}
+
+.mce-content-body {
+    font-size: .9rem;
+}
+.htmlfontsize-50.mce-content-body {
+    font-size: .5rem;
+}
+.htmlfontsize-75.mce-content-body {
+    font-size: .7rem;
+}
+.htmlfontsize-80.mce-content-body {
+    font-size: .72rem;
+}
+.htmlfontsize-85.mce-content-body {
+    font-size: .765rem;
+}
+.htmlfontsize-90.mce-content-body {
+    font-size: .81rem;
+}
+.htmlfontsize-95.mce-content-body {
+    font-size: .855rem;
+}
+.htmlfontsize-105.mce-content-body {
+    font-size: .945rem;
+    padding: .666rem;
+    padding-left: .666rem!important;
+    padding-right: .666rem!important;
+}
+.htmlfontsize-110.mce-content-body {
+    font-size: .99rem;
+    padding: .687rem;
+    padding-left: .687rem!important;
+    padding-right: .687rem!important;
+}
+.htmlfontsize-115.mce-content-body {
+    font-size: 1.035rem;
+    padding: .718rem;
+    padding-left: .718rem!important;
+    padding-right: .718rem!important;
+}
+.htmlfontsize-120.mce-content-body {
+    font-size: 1.08rem;
+    padding: .75rem;
+    padding-left: .75rem!important;
+    padding-right: .75rem!important;
+}
+.htmlfontsize-125.mce-content-body {
+    font-size: 1.125rem;
+    padding: .78rem;
+    padding-left: .78rem!important;
+    padding-right: .78rem!important;
+}
+.htmlfontsize-130.mce-content-body {
+    font-size: 1.17rem;
+    padding: .81rem;
+    padding-left: .81rem!important;
+    padding-right: .81rem!important;
+}
+.htmlfontsize-135.mce-content-body {
+    font-size: 1.215rem;
+    padding: .84rem;
+    padding-left: .84rem!important;
+    padding-right: .84rem!important;
+}
+.htmlfontsize-140.mce-content-body {
+    font-size: 1.26rem;
+    padding: .875rem;
+    padding-left: .875rem!important;
+    padding-right: .875rem!important;
+}
+.htmlfontsize-145.mce-content-body {
+    font-size: 1.305rem;
+    padding: .9rem;
+    padding-left: .9rem!important;
+    padding-right: .9rem!important;
+}
+.htmlfontsize-150.mce-content-body {
+    font-size: 1.35rem;
+    padding: .937rem;
+    padding-left: .937rem!important;
+    padding-right: .937rem!important;
+}
+.htmlfontsize-175.mce-content-body {
+    font-size: 1.575rem;
+    padding: 1rem;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+}
+.htmlfontsize-200.mce-content-body {
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: .7rem;
+    line-height: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 1.375rem;
+}
+
+.htmlfontsize-50 h1 {
+    font-size: calc(1.375rem - 50%);
+}
+.htmlfontsize-75 h1 {
+    font-size: calc(1.375rem - 25%);
+}
+.htmlfontsize-80 h1 {
+    font-size: calc(1.375rem - 20%);
+}
+.htmlfontsize-85 h1 {
+    font-size: calc(1.375rem - 15%);
+}
+.htmlfontsize-90 h1 {
+    font-size: calc(1.375rem - 10%);
+}
+.htmlfontsize-95 h1 {
+    font-size: calc(1.375rem - 5%);
+}
+.htmlfontsize-105 h1 {
+    font-size: calc(1.375rem + 5%);
+}
+.htmlfontsize-110 h1 {
+    font-size: calc(1.375rem + 10%);
+}
+.htmlfontsize-115 h1 {
+    font-size: calc(1.375rem + 15%);
+}
+.htmlfontsize-120 h1 {
+    font-size: calc(1.375rem + 20%);
+}
+.htmlfontsize-125 h1 {
+    font-size: calc(1.375rem + 25%);
+}
+.htmlfontsize-130 h1 {
+    font-size: calc(1.375rem + 30%);
+}
+.htmlfontsize-135 h1 {
+    font-size: calc(1.375rem + 35%);
+}
+.htmlfontsize-140 h1 {
+    font-size: calc(1.375rem + 40%);
+}
+.htmlfontsize-145 h1 {
+    font-size: calc(1.375rem + 45%);
+}
+.htmlfontsize-150 h1 {
+    font-size: calc(1.375rem + 50%);
+}
+.htmlfontsize-175 h1  {
+    font-size: calc(1.375rem + 75%);
+}
+.htmlfontsize-200 h1 {
+    font-size: calc(1.375rem + 100%);
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+.htmlfontsize-50 h2 {
+    font-size: calc(1.25rem - 50%);
+}
+.htmlfontsize-75 h2 {
+    font-size: calc(1.25rem - 25%);
+}
+.htmlfontsize-80 h2 {
+    font-size: calc(1.25rem - 20%);
+}
+.htmlfontsize-85 h2 {
+    font-size: calc(1.25rem - 15%);
+}
+.htmlfontsize-90 h2 {
+    font-size: calc(1.25rem - 10%);
+}
+.htmlfontsize-95 h2 {
+    font-size: calc(1.25rem - 5%);
+}
+.htmlfontsize-105 h2 {
+    font-size: calc(1.25rem + 5%);
+}
+.htmlfontsize-110 h2 {
+    font-size: calc(1.25rem + 10%);
+}
+.htmlfontsize-115 h2 {
+    font-size: calc(1.25rem + 15%);
+}
+.htmlfontsize-120 h2 {
+    font-size: calc(1.25rem + 20%);
+}
+.htmlfontsize-125 h2 {
+    font-size: calc(1.25rem + 25%);
+}
+.htmlfontsize-130 h2 {
+    font-size: calc(1.25rem + 30%);
+}
+.htmlfontsize-135 h2 {
+    font-size: calc(1.25rem + 35%);
+}
+.htmlfontsize-140 h2 {
+    font-size: calc(1.25rem + 40%);
+}
+.htmlfontsize-145 h2 {
+    font-size: calc(1.25rem + 45%);
+}
+.htmlfontsize-150 h2 {
+    font-size: calc(1.25rem + 50%);
+}
+.htmlfontsize-175 h2  {
+    font-size: calc(1.25rem + 75%);
+}
+.htmlfontsize-200 h2 {
+    font-size: calc(1.25rem + 100%);
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+.htmlfontsize-50 h3 {
+    font-size: calc(1.125rem - 50%);
+}
+.htmlfontsize-75 h3 {
+    font-size: calc(1.125rem - 25%);
+}
+.htmlfontsize-80 h3 {
+    font-size: calc(1.125rem - 20%);
+}
+.htmlfontsize-85 h3 {
+    font-size: calc(1.125rem - 15%);
+}
+.htmlfontsize-90 h3 {
+    font-size: calc(1.125rem - 10%);
+}
+.htmlfontsize-95 h3 {
+    font-size: calc(1.125rem - 5%);
+}
+.htmlfontsize-105 h3 {
+    font-size: calc(1.125rem + 5%);
+}
+.htmlfontsize-110 h3 {
+    font-size: calc(1.125rem + 10%);
+}
+.htmlfontsize-115 h3 {
+    font-size: calc(1.125rem + 15%);
+}
+.htmlfontsize-120 h3 {
+    font-size: calc(1.125rem + 20%);
+}
+.htmlfontsize-125 h3 {
+    font-size: calc(1.125rem + 25%);
+}
+.htmlfontsize-130 h3 {
+    font-size: calc(1.125rem + 30%);
+}
+.htmlfontsize-135 h3 {
+    font-size: calc(1.125rem + 35%);
+}
+.htmlfontsize-140 h3 {
+    font-size: calc(1.125rem + 40%);
+}
+.htmlfontsize-145 h3 {
+    font-size: calc(1.125rem + 45%);
+}
+.htmlfontsize-150 h3 {
+    font-size: calc(1.125rem + 50%);
+}
+.htmlfontsize-175 h3  {
+    font-size: calc(1.125rem + 75%);
+}
+.htmlfontsize-200 h3 {
+    font-size: calc(1.125rem + 100%);
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.htmlfontsize-50 h4 {
+    font-size: calc(1rem - 50%);
+}
+.htmlfontsize-75 h4 {
+    font-size: calc(1rem - 25%);
+}
+.htmlfontsize-80 h4 {
+    font-size: calc(1rem - 20%);
+}
+.htmlfontsize-85 h4 {
+    font-size: calc(1rem - 15%);
+}
+.htmlfontsize-90 h4 {
+    font-size: calc(1rem - 10%);
+}
+.htmlfontsize-95 h4 {
+    font-size: calc(1rem - 5%);
+}
+.htmlfontsize-105 h4 {
+    font-size: calc(1rem + 5%);
+}
+.htmlfontsize-110 h4 {
+    font-size: calc(1rem + 10%);
+}
+.htmlfontsize-115 h4 {
+    font-size: calc(1rem + 15%);
+}
+.htmlfontsize-120 h4 {
+    font-size: calc(1rem + 20%);
+}
+.htmlfontsize-125 h4 {
+    font-size: calc(1rem + 25%);
+}
+.htmlfontsize-130 h4 {
+    font-size: calc(1rem + 30%);
+}
+.htmlfontsize-135 h4 {
+    font-size: calc(1rem + 35%);
+}
+.htmlfontsize-140 h4 {
+    font-size: calc(1rem + 40%);
+}
+.htmlfontsize-145 h4 {
+    font-size: calc(1rem + 45%);
+}
+.htmlfontsize-150 h4 {
+    font-size: calc(1rem + 50%);
+}
+.htmlfontsize-175 h4  {
+    font-size: calc(1rem + 75%);
+}
+.htmlfontsize-200 h4 {
+    font-size: calc(1rem + 100%);
+}
+
+h5 {
+    font-size: .9rem;
+}
+
+.htmlfontsize-50 h5 {
+    font-size: calc(.9rem - 50%);
+}
+.htmlfontsize-75 h5 {
+    font-size: calc(.9rem - 25%);
+}
+.htmlfontsize-80 h5 {
+    font-size: calc(.9rem - 20%);
+}
+.htmlfontsize-85 h5 {
+    font-size: calc(.9rem - 15%);
+}
+.htmlfontsize-90 h5 {
+    font-size: calc(.9rem - 10%);
+}
+.htmlfontsize-95 h5 {
+    font-size: calc(.9rem - 5%);
+}
+.htmlfontsize-105 h5 {
+    font-size: calc(.9rem + 5%);
+}
+.htmlfontsize-110 h5 {
+    font-size: calc(.9rem + 10%);
+}
+.htmlfontsize-115 h5 {
+    font-size: calc(.9rem + 15%);
+}
+.htmlfontsize-120 h5 {
+    font-size: calc(.9rem + 20%);
+}
+.htmlfontsize-125 h5 {
+    font-size: calc(.9rem + 25%);
+}
+.htmlfontsize-130 h5 {
+    font-size: calc(.9rem + 30%);
+}
+.htmlfontsize-135 h5 {
+    font-size: calc(.9rem + 35%);
+}
+.htmlfontsize-140 h5 {
+    font-size: calc(.9rem + 40%);
+}
+.htmlfontsize-145 h5 {
+    font-size: calc(.9rem + 45%);
+}
+.htmlfontsize-150 h5 {
+    font-size: calc(.9rem + 50%);
+}
+.htmlfontsize-175 h5  {
+    font-size: calc(.9rem + 75%);
+}
+.htmlfontsize-200 h5 {
+    font-size: calc(.9rem + 100%);
+}
+
+h6 {
+    font-size: .75rem;
+}
+
+.htmlfontsize-50 h6 {
+    font-size: calc(.75rem - 50%);
+}
+.htmlfontsize-75 h6 {
+    font-size: calc(.75rem - 25%);
+}
+.htmlfontsize-80 h6 {
+    font-size: calc(.75rem - 20%);
+}
+.htmlfontsize-85 h6 {
+    font-size: calc(.75rem - 15%);
+}
+.htmlfontsize-90 h6 {
+    font-size: calc(.75rem - 10%);
+}
+.htmlfontsize-95 h6 {
+    font-size: calc(.75rem - 5%);
+}
+.htmlfontsize-105 h6 {
+    font-size: calc(.75rem + 5%);
+}
+.htmlfontsize-110 h6 {
+    font-size: calc(.75rem + 10%);
+}
+.htmlfontsize-115 h6 {
+    font-size: calc(.75rem + 15%);
+}
+.htmlfontsize-120 h6 {
+    font-size: calc(.75rem + 20%);
+}
+.htmlfontsize-125 h6 {
+    font-size: calc(.75rem + 25%);
+}
+.htmlfontsize-130 h6 {
+    font-size: calc(.75rem + 30%);
+}
+.htmlfontsize-135 h6 {
+    font-size: calc(.75rem + 35%);
+}
+.htmlfontsize-140 h6 {
+    font-size: calc(.75rem + 40%);
+}
+.htmlfontsize-145 h6 {
+    font-size: calc(.75rem + 45%);
+}
+.htmlfontsize-150 h6 {
+    font-size: calc(.75rem + 50%);
+}
+.htmlfontsize-175 h6  {
+    font-size: calc(.75rem + 75%);
+}
+.htmlfontsize-200 h6 {
+    font-size: calc(.75rem + 100%);
+}
+
+a {
+    color: #b8312f;
+    text-decoration: none;
+    -webkit-transition: color 0.2s ease 0s, text-decoration 0.2s ease 0s;
+    -moz-transition: color 0.2s ease 0s, text-decoration 0.2s ease 0s;
+    -o-transition: color 0.2s ease 0s, text-decoration 0.2s ease 0s;
+    transition: color 0.2s ease 0s, text-decoration 0.2s ease 0s
+}
+
+a:hover, .fr-view a:focus {
+    color: #d65f5e;
+    text-decoration: underline
+}
+
+a:active, .fr-view a:hover, .fr-view a:focus {
+    outline: 0
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	margin: auto;
+	width: 100%;
+}
+p {margin: 0; padding: 0;}
+
+code,
+pre {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre::-moz-selection, pre ::-moz-selection,
+code::-moz-selection, code ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre::selection, pre ::selection,
+code::selection, code ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+/* Code blocks */
+pre {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code,
+pre {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: transparent;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+
+.title_quote {
+	padding: .5rem .7rem;
+	border: 1px solid #FF9800;
+	color: #333;
+	background-color: #FFF3E0;
+	border-left-width: 5px;
+	font-weight: 700 !important;
+	border-bottom-color: #FF9800;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24)
+}
+
+blockquote, .quote {
+	padding: .5rem .7rem;
+	border: 1px solid #FF9800;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+	color: #333;
+	background-color: #FFF3E0;
+	border-left-width: 5px;
+	margin: 0;
+}
+.dle_theme_dark blockquote, .dle_theme_dark .quote {
+	color: #6b6b6b;
+	background-color: #dedede;
+	border: 1px solid #666;
+	border-left-width: 5px;
+}
+
+.dle_theme_dark .title_quote {
+	color: #fff;
+	background-color: #666;
+	border: 1px solid #666;
+}
+
+.quote_block {
+	margin-top: 0;
+    margin-bottom: .7rem;
+}
+
+.title_quote+.quote {
+	border-top-width: 0
+}
+
+p {
+	margin-top: 0;
+    margin-bottom: .7rem;
+}
+
+p:last-child {
+   margin-bottom: 0;
+}
+div+p {
+	margin-top: 0.7rem;
+}
+
+.native-emoji {
+    font-size: 1.3rem;
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'NotoColorEmoji', 'Segoe UI Symbol', 'Android Emoji', 'EmojiSymbols';
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.dle_theme_dark {
+    color: rgba(255,255,255,.9);
+    background-color: #282c39;
+}
+.dle_theme_dark a {
+    color: #64B5F6;
+}
+
+img {
+	max-width: 100%;
+}
+
+.mce-content-body figure {
+    margin: 0;
+}
+
+.mce-content-body figure.image figcaption {
+	padding: 1rem;
+    background-color: #fafafa;
+    font-size: .8rem;
+    caption-side: bottom;
+    word-break: break-word;
+    text-align: center;
+}
+
+.mce-content-body figure.image.align-center figcaption {
+	display: table-caption;
+}
+
+.mce-pagebreak{width:99%;}
+
+.mce-toc ul ul {
+    padding-left: 20px;
+}
+
+.dle_theme_dark.mce-content-body [data-mce-selected=inline-boundary] {
+    background-color: inherit;
+}
+
+.dle_theme_dark.mce-content-body figure.image figcaption {
+    background-color: #fafafa05;
+}
+
+.image-bordered {
+	border: 1px solid #ddd;
+}
+
+.image-shadows {
+	box-shadow: rgb(9 30 66 / 25%) 0px 4px 8px -2px, rgb(9 30 66 / 8%) 0px 0px 0px 1px;
+}
+
+.image-padded {
+	padding: 0.5rem;
+}
+
+.comments-user-profile {
+	padding: 0.2rem 0.5rem;
+    background: linear-gradient(rgba(23, 126, 201, 0.15), rgba(23, 126, 201, 0.15));
+    border-radius: 20px;
+    font-size: 90%;
+    color: #177ec9;
+}
+
+.style-smoothing {
+    -webkit-font-smoothing: antialiased
+}
